@@ -17,7 +17,7 @@ const { authenticated } = require('./middleware');
 
 app.use(bodyParser.json());
 
-app.group('/api/v1', router => {
+app.group('/api/v2', router => {
   //hellor world
   router.get('/', (req, res) => {
     res.send('Hello World!');
