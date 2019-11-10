@@ -33,7 +33,6 @@ app.group('/api/v2', router => {
   router.get('/rooms', authenticated, RoomController.showAllRoom);
   router.post('/room', authenticated, RoomController.addRoom);
   router.put('/room/:id', authenticated, RoomController.updateRoom);
-  router.put('/room/:id', authenticated, RoomController.deleteRoom);
   router.delete('/room/:id', authenticated, RoomController.deleteRoom);
   //
   //
