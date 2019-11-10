@@ -54,3 +54,13 @@ exports.updateRoom = (req, res) => {
       });
     });
 };
+
+exports.deleteRoom = (req, res) => {
+  rooms.destroy({ where: { id: req.params.id } })
+    .then(room => {
+      res.send({
+        message: "success",
+        room
+      })
+    })
+}

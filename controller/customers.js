@@ -57,3 +57,13 @@ exports.updateCustomer = (req, res) => {
       });
     });
 };
+
+exports.deleteCustomer = (req, res) => {
+  customers.destroy({ where: { id: req.params.id } })
+    .then(customers => {
+      res.send({
+        message: "success",
+        customers
+      })
+    })
+}

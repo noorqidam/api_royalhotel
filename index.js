@@ -33,12 +33,15 @@ app.group('/api/v2', router => {
   router.get('/rooms', authenticated, RoomController.showAllRoom);
   router.post('/room', authenticated, RoomController.addRoom);
   router.put('/room/:id', authenticated, RoomController.updateRoom);
+  router.put('/room/:id', authenticated, RoomController.deleteRoom);
+  router.delete('/room/:id', authenticated, RoomController.deleteRoom);
   //
   //
   //customers
   router.get('/customers', authenticated, CustomerController.showAllCustomers);
   router.post('/customer', authenticated, CustomerController.addCustomer);
   router.put('/customer/:id', authenticated, CustomerController.updateCustomer);
+  router.delete('/customer/:id', authenticated, CustomerController.deleteCustomer);
   //
   //
   //checkin
