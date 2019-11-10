@@ -7,7 +7,7 @@ module.exports = {
         email: 'noorqidam@gmail.com',
         password: '1234',
         name: 'Qidam',
-        image: 'https://pbs.twimg.com/profile_images/597288120850092032/pTU4VpzY.jpg',
+        image: 'https://carlisletheacarlisletheatre.org/images/user-icon-admin-5.gif',
       },
       {
         email: 'arkademy@gmail.com',
